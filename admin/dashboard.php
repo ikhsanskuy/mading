@@ -85,6 +85,10 @@ if (!isset($_SESSION['admin'])) {
                         include 'page/politik.php';
                     } elseif ($_GET['halaman'] == "comments") {
                         include 'page/comments.php';
+                    } elseif ($_GET['halaman'] == "add") {
+                        include 'config/add.php';
+                    } elseif ($_GET['halaman'] == "logout") {
+                        include 'config/logout.php';
                     }
                 } else {
                     include 'page/home.php';
