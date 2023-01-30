@@ -1,53 +1,58 @@
-<a href="dashboard.php?halaman=add">tes</a>
-<?php  
-if (isset($_POST['send'])) {
-        
-        $npm            = mysqli_real_escape_string($con, $_POST['npm']);
-        $nama_mahasiswa = mysqli_real_escape_string($con, $_POST['nama_mhs']);
-        $kelas          = mysqli_real_escape_string($con, $_POST['kelas']);
-        $no_telpon      = mysqli_real_escape_string($con, $_POST['no_telp']);
+<h2>Data Buku</h2>
+<a href="dashboard.php?halaman=add" class="btn btn-primary">Tambah Buku</a> <br><br>
+<!-- <div>
+	<select name="jenis" id="jenis">
+	<option value="pemrograman">Pemrograman</option><?php $pemrograman = $ambil = $conn->query("SELECT * FROM buku"); ?>
+	<option value="filsafat">Filsafat</option>
+	<option value="politik">Politik</option>
+	</select>
+</div> -->
+<!-- <table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>Judul Buku</th>
+			<th>Jenis Buku</th>
+			<th>Deskripsi</th>
+			<th>File</th>
+			<th>Aksi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php $nomor = 1; ?>
+		<?php $ambil = $conn->query("SELECT * FROM buku"); ?>
+		<?php while ($data = $ambil->fetch_assoc()) { ?>
+			<tr>
+				<td><?php echo $nomor; ?></td>
+				<td><?php echo $data['judul']; ?></td>
+				<td><?php echo $data['jenis']; ?></td>
+				<td><?php echo $data['deskripsi']; ?></td>
+				<td><a href="../assets/book/<?php echo $data['file']; ?>" target="_blank"><?php echo $data['file']; ?></a></td>
+				<td>
+					<a href="dashboard.php?halaman=update&id=<?php echo $data['id']; ?>" class="btn btn-warning">Ubah</a>
+					<a href="dashboard.php?halaman=delete&id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+				</td>
+			</tr>
+			<?php $nomor++; ?>
+		<?php } ?>
+	</tbody>
+</table> -->
 
 
 
-        $nomor_acak = round(microtime(true));
-        $foto = $_FILES['foto']['name'];
-        $tipe_foto = $_FILES['foto']['type'];
-        $file_tmp = $_FILES['foto']['tmp_name'];
-        
-        $foto_baru = $nomor_acak. '_' .$foto;
-    	
-    	$a = mysqli_query($con, "SELECT foto FROM data_mhs WHERE npm='$npm' ");
-        $cek = mysqli_fetch_assoc($a);
-        $folder = "../assets/foto/$cek[foto]";
-    	unlink($folder);
-        $del=mysqli_query($con, "DELETE foto FROM data_mhs WHERE npm='$npm' "); 
-    	
-        if ($insertdata) {
-            if($tipe_foto == "image/jpeg" || $tipe_foto == "image/png" || $tipe_foto == "image/jpg"){
-
-                $insertdata     = mysqli_query($con, "INSERT INTO `data_mhs` (`nama_mhs`, `kelas`, `no_telp`, fo) 
-                                              VALUES ('$nama_mahasiswa', '$kelas', '$no_telpon') ");
-                
-                $update = mysqli_query($con, "UPDATE foto SET foto='$foto_baru' WHERE npm='$npm' ");
-            
-                @move_uploaded_file($file_tmp, "../assets/foto/".$foto_baru);
-        
-                if ($update){
-                    echo"<script>alert('Foto Berhasil Di Ubah');
-                    location.href='../pages/berkas/Biodata/';</script>";
-                }else{
-                    echo"<script>alert('Foto Gagal Di Ubah');
-                    location.href='../pages/berkas/Biodata/';</script>";
-                }
-            }else{
-                echo"<script>alert('Maaf format file berkas selain JPG/JPEG/PNG tidak di dukung');
-                    location.href='../pages/berkas/Biodata/';</script>";
-            }
-        
-            echo "Berhasil nambah data baru";
-        }else {
-            echo "Gagal nambah data baru";
-        }
-
-    }
-?>
+<?php $ambil = $conn->query("SELECT * FROM buku"); ?>
+		<?php while ($data = $ambil->fetch_assoc()) { ?>
+	<div class="col-sm-4">
+		
+        <div class="thumbnail">
+          <div class="caption text-center">
+				<h1 id="thumbnail-label"><?php echo $data['judul']; ?></h1>
+				<h4 id="thumbnail-label"><?php echo $data['jenis']; ?></h4>
+				<p id="thumbnail-label"><?php echo $data['deskripsi']; ?></p>
+				<a href="dashboard.php?halaman=update&id=<?php echo $data['id']; ?>" class="btn btn-warning">Ubah</a>
+				<a href="dashboard.php?halaman=delete&id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+          </div>
+        </div>
+		
+    </div>
+	<?php } ?>

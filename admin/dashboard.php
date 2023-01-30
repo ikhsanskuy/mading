@@ -41,7 +41,7 @@ if (!isset($_SESSION['admin'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Angkringan</a>
+                <a class="navbar-brand" href="index.php">Literasi</a>
             </div>
         </nav>
         <!-- /. NAV TOP  -->
@@ -87,6 +87,10 @@ if (!isset($_SESSION['admin'])) {
                         include 'page/comments.php';
                     } elseif ($_GET['halaman'] == "add") {
                         include 'config/add.php';
+                    } elseif ($_GET['halaman'] == "update") {
+                        include 'config/update.php';
+                    } elseif ($_GET['halaman'] == "delete") {
+                        include 'config/delete.php';
                     } elseif ($_GET['halaman'] == "logout") {
                         include 'config/logout.php';
                     }
