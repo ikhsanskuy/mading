@@ -42,9 +42,9 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <!-- <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
-                <!-- <div class="row gx-4 gx-lg-5">
+                <div class="row gx-4 gx-lg-5">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -75,14 +75,14 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="social d-flex justify-content-center">
                     <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2022</div></footer>
         <!-- Bootstrap core JS-->

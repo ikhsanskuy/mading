@@ -15,7 +15,7 @@ include('include/header.php')
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
+        <!-- <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
@@ -29,11 +29,53 @@ include('include/header.php')
                 </div>
                 <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
-        </section>
-        <!-- Projects-->
+        </section> -->
+
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/logo.jpg" alt="" width="200">
+                                <h4 class="text-uppercase m-0">Pemrograman</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <a class="btn btn-primary mt-3" href="bukupm.php">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/logo.jpg" alt="" width="200">
+                                <h4 class="text-uppercase m-0">Filsafat</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <a class="btn btn-primary mt-3" href="bukufs.php">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/logo.jpg" alt="" width="200">
+                                <h4 class="text-uppercase m-0">Politik</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <a class="btn btn-primary mt-3" href="bukupl.php">Lihat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects-->
+        <!-- <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
@@ -43,7 +85,7 @@ include('include/header.php')
                         </div>
                     </div>
                 </div>
-                <!-- Project One Row-->
+                
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
@@ -58,7 +100,7 @@ include('include/header.php')
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -74,7 +116,7 @@ include('include/header.php')
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Signup-->
 <?php 
 include('include/footer.php') 
