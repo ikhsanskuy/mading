@@ -25,36 +25,59 @@ include('koneksi.php') ;
         </section>
 
         <section>
+        <form method="post" enctype="multipart/form-data">
             <div class="container my-5 py-5">
                 <div class="row d-flex justify-content-center">
                 <div class="col-md-12 col-lg-10 col-xl-8">
                     <div class="card">
-
+                    
                         <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
                             <div class="d-flex flex-start w-100">
                             <img class="rounded-circle shadow-1-strong me-3"
                                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="40"
                                 height="40" />
+                            
+                                <div class="form-outline w-100">
+                                    <input class="form-control mb-3" type="hidden" style="width:50%" name="buku" value="<?php echo $data['judul']; ?>">
+                                    <input class="form-control mb-3" type="text" style="width:50%" name="nama" placeholder="Isi nama anda">
+                                    <textarea class="form-control" id="textAreaExample" rows="4" name="comment" style="background: #fff;"  placeholder="Isi pesan anda"></textarea>
+                                </div>
 
-                            <div class="form-outline w-100">
-                                <input class="form-control mb-3" type="hidden" style="width:50%" value="<?php echo $data['judul']; ?>">
-                                <input class="form-control mb-3" type="text" style="width:50%" placeholder="Isi nama anda">
-                                <textarea class="form-control" id="textAreaExample" rows="4" style="background: #fff;"  placeholder="Isi pesan anda"></textarea>
-                            </div>
-
-                            </div>
-                            <div class="float-end mt-2 pt-1">
-                            <button type="button" class="btn btn-primary btn-sm">Post comment</button>
-                            </div>
-
+                                </div>
+                                <div class="float-end mt-2 pt-1">
+                                <button type="submit" class="btn btn-primary btn-sm" name="save">Post comment</button>
+                                </div>
+                            
                             <?php } ?>
                         </div>
-
+                        
                     </div>
                 </div>
                 </div>
             </div>
+            </form>
         </section>
+
+        <?php
+        if (isset($_POST['save'])) {
+
+            $buku      = ($_POST['buku']);
+            $nama      = ($_POST['nama']);
+            $comment      = ($_POST['comment']);
+
+            $query = mysqli_query($conn, "INSERT INTO `comment` (`buku`,`nama`,`comment`) 
+                            VALUES ('$buku','$nama','$comment')");
+
+
+            if ($query) {
+                echo "<script>alert('Komentar anda telah berhasil');</script>";
+                echo "<meta http-equiv='refresh' content='1'>";
+            } else {
+                echo "<script>alert('Komentar anda telah berhasil');</script>";
+                echo "<meta http-equiv='refresh' content='1'>";
+            }
+        }
+        ?>
        
         <!-- Signup-->
 <?php 

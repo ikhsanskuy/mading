@@ -1,53 +1,37 @@
 <div class="panel panel-default">
-  <div class="panel-heading">Panel Heading</div>
-  <div class="panel-body">Panel Content</div>
-  <div class="panel-footer">Panel Footer</div>
-</div>
+<?php $ambil = $conn->query("SELECT * FROM comment"); ?>
+		        <?php while ($data = $ambil->fetch_assoc()) { ?>
+<div class="panel-heading"> 
+  <div class="container my-5 py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-start align-items-center">
+              <!-- <img class="rounded-circle shadow-1-strong me-3"
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar" width="60"
+                height="60" /> -->
+              <div>
+                <h1 class="fw-bold text-primary mb-1"><?php echo $data['nama']; ?></h1>
+                <h6 class="fw-bold text-primary mb-1"><?php echo $data['buku']; ?></h6>
+              </div>
+            </div>
 
-
-
-<div class="row">
-  <div class="col-md-2">&nbsp;</div>
-  <div class="col-md-8">
-    <div class="row space-16">&nbsp;</div>
-    <div class="row">
-
-
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <div class="caption text-center" onclick="location.href='https://flow.microsoft.com/en-us/connectors/shared_slack/slack/'">
-            <h4 id="thumbnail-label"><a href="https://flow.microsoft.com/en-us/connectors/shared_slack/slack/" target="_blank">Microsoft Slack</a></h4>
-            <p><i class="glyphicon glyphicon-user light-red lighter bigger-120"></i>&nbsp;Auditor</p>
+            <p class="mt-3 mb-4 pb-2">
+            <?php echo $data['comment']; ?> <br>
+            
+            </p>
+            <?php echo $data['date']; ?>
           </div>
-          <div class="caption card-footer text-center">
-            <ul class="list-inline">
-              <li><i class="people lighter"></i>&nbsp;7 Active Users</li>
-              <li></li>
-              <li><i class="glyphicon glyphicon-envelope lighter"></i><a href="#">&nbsp;Help</a></li>
-            </ul>
-          </div>
+
         </div>
       </div>
-      
-
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <div class="caption text-center" onclick="location.href='https://flow.microsoft.com/en-us/connectors/shared_slack/slack/'">
-            <h4 id="thumbnail-label"><a href="https://flow.microsoft.com/en-us/connectors/shared_slack/slack/" target="_blank">Microsoft Slack</a></h4>
-            <p><i class="glyphicon glyphicon-user light-red lighter bigger-120"></i>&nbsp;Auditor</p>
-          </div>
-          <div class="caption card-footer text-center">
-            <ul class="list-inline">
-              <li><i class="people lighter"></i>&nbsp;7 Active Users</li>
-              <li></li>
-              <li><i class="glyphicon glyphicon-envelope lighter"></i><a href="#">&nbsp;Help</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      
     </div>
-    <div class="col-md-2">&nbsp;</div>
   </div>
 </div>
+
+  <?php } ?>
+</div>
+
+
+
