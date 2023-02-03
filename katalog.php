@@ -29,14 +29,14 @@ include('include/header.php')
                 </div> -->
                 
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/politik.jpeg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-secondary text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Politik</h4>
-                                    <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                    <h4 class="text-black">Politik</h4>
+                                    <p class="mb-0 text-black-50">singkatnya politik berarti bertahan hidup atau survival. sehingga saling berinteraksi dan saling membutuhkan untuk 
+mencapai kesejahteraan seperti manusia yang disebut "hewan politik" (Aristoteles).</p>
                                 </div>
                             </div>
                         </div>
@@ -44,14 +44,14 @@ include('include/header.php')
                 </div>
 
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/pemrograman.jpeg" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-secondary text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Pemrograman</h4>
-                                    <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                    <h4 class="text-black">Pemrograman</h4>
+                                    <p class="mb-0 text-black-50">bahasa pemrograman dikenal dengan programing language. 
+Bahasa pemrograman adalah himpunan standar instruksi dalam menjalankan, memerintahkan dan mengomunikasikan sistem dengan hardware.</p>
                                 </div>
                             </div>
                         </div>
@@ -59,14 +59,18 @@ include('include/header.php')
                 </div>
 
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/filsafat.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-secondary text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Filsafat</h4>
-                                    <p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                    <h4 class="text-black">Filsafat</h4>
+                                    <p class="mb-0 text-black-50">Pada dasarnya filsafat adalah gerak nalar yang wajar, sealamiah bernafas, aliran pikiran
+yang pada titik tertentu tak bisa dihentikan dan dibungkam. filsafat adalah sistematisasi
+pengalaman bernalar dan kecenderungan ingin tahu yang telah dimiliki sejak masa kanak kanak.
+filsafat mengasah kepekaan kita mana hal sepele, mana yang layak dibela, dan mana yang bisa dibiarkan saja.
+</p>
+                                    
                                 </div>
                             </div>
                         </div>

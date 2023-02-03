@@ -18,7 +18,7 @@ include('koneksi.php') ;
                                 <img src="./assets/img/logo.jpg" alt="" width="200">
                                 <h4 class="text-uppercase m-0"><?php echo $data['judul']; ?></h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <!-- <div class="small text-black-50">4923 Market Street, Orlando FL</div> -->
                                 <!-- <a class="btn btn-primary mt-3" href="#about">Baca</a> -->
                                 <a class="btn btn-primary mt-3" target=_blank href="read.php?id=<?php echo $data['id']; ?>">Baca</a>
                             </div>
