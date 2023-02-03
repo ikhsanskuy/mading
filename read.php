@@ -14,7 +14,9 @@ include('koneksi.php') ;
 		        <?php while ($data = $ambil->fetch_assoc()) { ?>
                     <h1 class="text-center mb-3"><?php echo $data['judul']; ?></h1><hr style="width:50%;margin:0 auto;;">
                     <h5 class="text-center mt-3 mb"><?php echo $data['jenis']; ?></h5>
-                    <object data="assets/book/<?php echo $data['file']; ?>" width="300" height="800"></object>
+                    <!-- <object data="assets/book/<?php echo $data['file']; ?>" width="300" height="800"></object> -->
+                    <iframe src="assets/book/<?php echo $data['file']; ?>" width="300" height="800"></iframe>
+                    <!-- <embed type="application/pdf" src="assets/book/<?php echo $data['file']; ?>" width="300" height="800"> -->
                     
                 </div>
                 
