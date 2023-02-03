@@ -1,6 +1,6 @@
 <h2>Data Buku</h2>
 <a href="dashboard.php?halaman=add" class="btn btn-primary margin-right">Tambah Buku</a> <br><br>
-
+<h2 class="text-center">POLITIK</h2>
 
 
 <?php $ambil = $conn->query("SELECT * FROM buku WHERE `jenis` LIKE '%politik%'"); ?>

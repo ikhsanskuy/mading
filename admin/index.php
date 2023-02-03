@@ -21,18 +21,18 @@ include '../koneksi.php';
 		<div class="overlay">
 		<h1>Literasi Admin Page.</h1>
 		
-		<span>
+		<!-- <span>
 			<p>login </p>
 			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
-		</span>
+		</span> -->
 		</div>
 	</div>
 	
 	<form role="form" method="post">
 		<div class="right">
 		<h5>Login</h5>
-		<p class="text-white">Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+		<p style="color: white;">Don't have an account? it takes less than a minutetakes less than a minute</p>
 		<div class="inputs">
 			<input type="text" name="user" placeholder="user name">
 			<br>
@@ -43,11 +43,11 @@ include '../koneksi.php';
 			
 		<div class="remember-me--forget-password">
 				<!-- Angular -->
-	<label>
+	<!-- <label>
 		<input type="checkbox" name="item" checked/>
 		<span class="text-checkbox">Remember me</span>
-	</label>
-			<p>forget password?</p>
+	</label> -->
+			<!-- <p>forget password?</p> -->
 		</div>
 			
 			<br>
