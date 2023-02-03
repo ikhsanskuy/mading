@@ -32,7 +32,7 @@ include '../koneksi.php';
 	<form role="form" method="post">
 		<div class="right">
 		<h5>Login</h5>
-		<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+		<p class="text-white">Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
 		<div class="inputs">
 			<input type="text" name="user" placeholder="user name">
 			<br>

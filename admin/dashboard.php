@@ -41,7 +41,7 @@ if (!isset($_SESSION['admin'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Literasi</a>
+                <a class="navbar-brand" href="../index.php"><i class="fa fa-home"></i>Literasi</a>
             </div>
         </nav>
         <!-- /. NAV TOP  -->
@@ -58,9 +58,9 @@ if (!isset($_SESSION['admin'])) {
                     <li>
                         <a href="dashboard.php?halaman=produk"><i class="fa fa-book fa-2x "></i>Jenis Buku         <i class="fa fa-caret-down "></i></a>
                         <ul>
-                            <li><a href="dashboard.php?halaman=pemrograman"><i class="fa fa-book"></i> Pemrograman</a></li>
-                            <li><a href="dashboard.php?halaman=filsafat"><i class="fa fa-book"></i> Filsafat</a></li>
-                            <li><a href="dashboard.php?halaman=politik"><i class="fa fa-book"></i> Politik</a></li>
+                            <li><a href="dashboard.php?halaman=pemrograman"><i class="fa fa-folder"></i> Pemrograman</a></li>
+                            <li><a href="dashboard.php?halaman=filsafat"><i class="fa fa-folder"></i> Filsafat</a></li>
+                            <li><a href="dashboard.php?halaman=politik"><i class="fa fa-folder"></i> Politik</a></li>
                         </ul>
                     </li>
                     <li>
