@@ -8,7 +8,7 @@ include('include/header.php') ;
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Literasi</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Silahkan mengisi deskripsi disini</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Book is a window to the world</h2>
                         <!-- <a class="btn btn-primary" href="#about">Get Started</a> -->
                     </div>
                 </div>
@@ -38,8 +38,8 @@ include('include/header.php') ;
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <img src="./assets/img/logo.jpg" alt="" width="200">
-                                <h4 class="text-uppercase m-0">Pemrograman</h4>
+                                <img src="./assets/img/ip.jpg" alt="" width="300">
+                                <h4 class="text-uppercase mt-3">Pemrograman</h4>
                                 <hr class="my-4 mx-auto" />
                                 <!-- <div class="small text-black-50">4923 Market Street, Orlando FL</div> -->
                                 <a class="btn btn-primary mt-3" href="bukupm.php">Lihat</a>
@@ -49,8 +49,8 @@ include('include/header.php') ;
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <img src="./assets/img/logo.jpg" alt="" width="200">
-                                <h4 class="text-uppercase m-0">Filsafat</h4>
+                                <img src="./assets/img/if.jpg" alt="" width="300">
+                                <h4 class="text-uppercase mt-3">Filsafat</h4>
                                 <hr class="my-4 mx-auto" />
                                 <!-- <div class="small text-black-50">4923 Market Street, Orlando FL</div> -->
                                 <a class="btn btn-primary mt-3" href="bukufs.php">Lihat</a>
@@ -60,8 +60,8 @@ include('include/header.php') ;
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <img src="./assets/img/logo.jpg" alt="" width="200">
-                                <h4 class="text-uppercase m-0">Politik</h4>
+                                <img src="./assets/img/ipo.jpg" alt="" width="300">
+                                <h4 class="text-uppercase mt-3">Politik</h4>
                                 <hr class="my-4 mx-auto" />
                                 <!-- <div class="small text-black-50">4923 Market Street, Orlando FL</div> -->
                                 <a class="btn btn-primary mt-3" href="bukupl.php">Lihat</a>
