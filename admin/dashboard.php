@@ -56,16 +56,17 @@ if (!isset($_SESSION['admin'])) {
                         <a href="dashboard.php"><i class="fa fa-dashboard fa-2x "></i>Beranda</a>
                     </li>
                     <li>
-                        <a href="dashboard.php?halaman=produk"><i class="fa fa-cube fa-2x "></i>Jenis Buku</a>
+                        <a href="dashboard.php?halaman=produk"><i class="fa fa-book fa-2x "></i>Jenis Buku         <i class="fa fa-caret-down "></i></a>
                         <ul>
-                            <li><a href="dashboard.php?halaman=pemrograman">Pemrograman</a></li>
-                            <li><a href="dashboard.php?halaman=filsafat">Filsafat</a></li>
-                            <li><a href="dashboard.php?halaman=politik">Politik</a></li>
+                            <li><a href="dashboard.php?halaman=pemrograman"><i class="fa fa-book"></i> Pemrograman</a></li>
+                            <li><a href="dashboard.php?halaman=filsafat"><i class="fa fa-book"></i> Filsafat</a></li>
+                            <li><a href="dashboard.php?halaman=politik"><i class="fa fa-book"></i> Politik</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="dashboard.php?halaman=comments"><i class="fa fa-shopping-cart fa-2x "></i>Comments</a>
+                        <a href="dashboard.php?halaman=comments"><i class="fa fa-comments fa-2x "></i>Comments</a>
                     </li>
+                    <li>
                         <a href="dashboard.php?halaman=logout"><i class="fa fa-sign-out fa-2x "></i>Logout</a>
                     </li>
                 </ul>
