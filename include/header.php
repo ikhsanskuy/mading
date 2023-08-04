@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Literasi</title>
+        <title>Mading</title>
         <link rel="icon" type="image/jpg" href="assets/img/logor.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -26,8 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="katalog.php">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Login</a></li>
                     </ul>
                 </div>
             </div>
