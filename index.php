@@ -46,7 +46,7 @@ include('include/header.php') ;
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <img src="./assets/img/ipo.jpg" alt="" width="300">
-                                <h4 class="mt-3">JEWEPE CUP Cerdas Cermat 23</h4>
+                                <h4 class="mt-3">JEWEPE CUP Cerdas Cermat</h4>
                                 <hr class="my-4 mx-auto" />
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nemo minus, praesentium cum commodi soluta.</p>
                                 <a href="">read more...</a>
